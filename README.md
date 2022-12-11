@@ -1,7 +1,7 @@
 # Snell Server Docker
 
-[![Docker Stars](https://img.shields.io/docker/stars/funnyzak/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/funnyzak/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
+[![Docker Stars](https://img.shields.io/docker/stars/viogus/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/viogus/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
 
 This image is based on Alpine Linux image, which is only a 9MB image, and contains Snell Server (**v3.0.1**).
 
@@ -31,7 +31,7 @@ Here is an example configuration of Docker and Docker Compse.
 
 ```Docker
 docker run -d --name snell-server --restart always \
--p 1002:12345 -e PSK="5G0H4qdf32mEZx32t" -e OBFS="tls" funnyzak/snell-server
+-p 1002:12345 -e PSK="5G0H4qdf32mEZx32t" -e OBFS="tls" ghcr.io/viogus/snell-server-docker
 ```
 
 ### Compose
@@ -40,7 +40,7 @@ docker run -d --name snell-server --restart always \
 version: '3'
 services:
   server:
-    image: funnyzak/snell-server
+    image: ghcr.io/viogus/snell-server-docker
     container_name: snell-server
     logging:
       driver: "json-file"
