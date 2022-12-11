@@ -1,4 +1,4 @@
-FROM funnyzak/alpine-glibc
+FROM frolvlad/alpine-glibc
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -21,7 +21,6 @@ LABEL org.label-schema.vendor="funnyzak<silenceace@gmail.com>" \
 ENV LANG=C.UTF-8
 ENV PORT=12345
 ENV PSK=
-ENV OBFS=tls
 
 COPY entrypoint.sh /usr/bin/
 
