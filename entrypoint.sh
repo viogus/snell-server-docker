@@ -19,7 +19,6 @@ run() {
     echo "[snell-server]" >> ${CONF}
     echo "listen = 0.0.0.0:${PORT}" >> ${CONF}
     echo "psk = ${PSK}" >> ${CONF}
-    echo "obfs = tls" >> ${CONF}
   fi
   ${BIN} -c ${CONF}
 }
