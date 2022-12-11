@@ -32,5 +32,6 @@ RUN wget --no-check-certificate -O snell.zip $SNELL_SERVER_PACKAGE && \
     chmod +x snell-server && \
     mv snell-server /usr/bin/ && \
     chmod +x /usr/bin/entrypoint.sh
+RUN apk add --update --no-cache libstdc++
 
 ENTRYPOINT ["entrypoint.sh"]
