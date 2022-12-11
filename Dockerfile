@@ -21,6 +21,7 @@ LABEL org.label-schema.vendor="viogus<cdf@gmail.com>" \
 ENV LANG=C.UTF-8
 ENV PORT=12345
 ENV PSK=
+ENV OBFS=off
 
 COPY entrypoint.sh /usr/bin/
 
