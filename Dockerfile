@@ -5,17 +5,17 @@ ARG VCS_REF
 ARG SNELL_SERVER_DOWNLOAD_VERSION=v4.0.0
 ARG SNELL_SERVER_VERSION=v4.0.0
 
-LABEL org.label-schema.vendor="funnyzak<silenceace@gmail.com>" \
+LABEL org.label-schema.vendor="viogus<cdf@gmail.com>" \
     org.label-schema.name="Snell Server" \
     org.label-schema.build-date="${BUILD_DATE}" \
     org.label-schema.description="This image is based on Alpine Linux image, which is only a 9MB image, and contains Snell Server." \
-    org.label-schema.url="https://yycc.me" \
+    org.label-schema.url="https://ccfcdf.me" \
     org.label-schema.version="${SNELL_SERVER_VERSION}" \
     org.label-schema.schema-version="1.0"	\
-    org.label-schema.docker.cmd="docker run -d --name snell-server --restart always -p 1002:12345 -e PSK=\"5G0H4qdf32mEZx32t\" -e OBFS=\"tls\" funnyzak/snell-server" \
+    org.label-schema.docker.cmd="docker run -d --name snell-server --restart always -p 1002:12345 -e PSK=\"5G0H4qdf32mEZx32t\"  ghcr.io/viogus/snell-server" \
     org.label-schema.vcs-type="Git" \
     org.label-schema.vcs-ref="${VCS_REF}" \
-    org.label-schema.vcs-url="https://github.com/funnyzak/snell-server-docker" 
+    org.label-schema.vcs-url="https://github.com/viogus/snell-server-docker" 
 
 
 ENV LANG=C.UTF-8
