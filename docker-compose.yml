@@ -1,0 +1,21 @@
+version: '2.4'
+services:
+  snell:
+    image: ghcr.io/viogus/snell-server-docker
+    container_name: snell-server
+    restart: always
+    network_mode: "host"
+    environment:
+      - PORT=12345 # change here
+      - PSK= #change here
+  shadow-tls:
+    image: ghcr.io/ihciah/shadow-tls:latest
+    container_name: shadow-tls
+    restart: always
+    network_mode: "host"
+    environment:
+      - MODE=server
+      - LISTEN=0.0.0.0:9443 # shadow-tls port here
+      - SERVER=127.0.0.1:12345
+      - TLS=cloud.tencent.com:443
+      - PASSWORD= # change here
