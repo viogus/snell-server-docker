@@ -1,17 +1,11 @@
 # Snell Server Docker
 
-[![Docker Stars](https://img.shields.io/docker/stars/viogus/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/viogus/snell-server.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/snell-server/)
 
 This image is based on Alpine Linux image, which is only a 9MB image, and contains Snell Server (**v4.0.0**).
 
-Download size of this image is only:
 
-[![Image Size](https://img.shields.io/docker/image-size/funnyzak/snell-server)](https://hub.docker.com/r/funnyzak/snell-server/)
 
-[Docker hub image: funnyzak/snell-server](https://hub.docker.com/r/funnyzak/snell-server)
-
-Docker Pull Command: `docker pull funnyzak/snell-server`
+Docker Pull Command: `docker pull ghcr.io/viogus/snell-server`
 
 ---
 
