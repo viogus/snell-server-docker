@@ -5,7 +5,7 @@ This image is based on Alpine Linux image, which is only a 9MB image, and contai
 
 
 
-Docker Pull Command: `docker pull ghcr.io/viogus/snell-server`
+Docker Pull Command: `docker pull ghcr.io/viogus/snell-server-docker`
 
 ---
 
