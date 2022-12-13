@@ -51,6 +51,11 @@ services:
       - ./conf:/etc/snell
 ```
 ---
+### Run with [shadow-tls](https://github.com/ihciah/shadow-tls)
+
+Use `docker-compose.yml` to run snell-server with shadow-tls. Please change the environment variables in `docker-compose.yml` to your own.
+
+---
 
 ## Related Link
 
