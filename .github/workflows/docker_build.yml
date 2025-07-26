@@ -10,7 +10,7 @@ on:
       - "*"
 
 env:
-  IMAGE_REPOSITORY: funnyzak/snell-server
+  IMAGE_REPOSITORY: viogus/snell-server
 
 jobs:
   docker-release:
