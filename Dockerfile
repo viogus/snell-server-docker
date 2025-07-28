@@ -26,8 +26,8 @@ COPY --from=build /snell-server /app/snell-server
 COPY entrypoint.sh /app/
 
 
-RUN chmod +x snell-server && \
-    chmod +x entrypoint.sh
+RUN chmod +x /app/snell-server && \
+    chmod +x /app/entrypoint.sh
 
 ENV LANG=C.UTF-8
 ENV TZ=Asia/Shanghai
